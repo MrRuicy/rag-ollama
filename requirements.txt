@@ -1,12 +1,19 @@
-langchain>=1.0.0
-langchain-core>=0.1.0
-langchain-community>=0.1.0
-langchain-ollama>=0.1.0
+# 基础依赖
+langchain>=0.1.0
+langchain-community>=0.0.10
 langchain-text-splitters>=0.0.1
+langchain-ollama>=0.1.0
 langchain-chroma>=0.1.0
 chromadb>=0.4.0
 fastapi>=0.110.0
 uvicorn>=0.27.0
+jinja2>=3.1.2
+
+# 文档处理
+unstructured>=0.15.0
 pypdf>=4.0.0
-requests>=2.31.0
-jinja2
+
+# 注意：其他依赖按需安装
+# Office文档支持: pip install "unstructured[docx,pptx,excel]"
+# PDF增强: pip install "unstructured[pdf]" pdfminer.six
+# 图片OCR: pip install pillow pytesseract
