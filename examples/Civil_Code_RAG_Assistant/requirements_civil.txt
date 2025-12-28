@@ -1,0 +1,14 @@
+# 民法典RAG助手专用依赖
+
+# 基础依赖（从项目根目录requirements.txt继承）
+-r ../../requirements.txt
+
+# 法律文档处理专用
+pymupdf
+
+# # 中文分词和文本处理（可选，用于增强中文支持）
+# jieba>=0.42.1
+# pkuseg>=0.0.25  # 专业分词
+
+# # 法律文本增强工具
+# legal-nlp-toolkit>=0.1.0  # 如果可用
